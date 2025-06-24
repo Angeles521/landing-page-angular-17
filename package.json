@@ -1,12 +1,14 @@
 {
   "name": "landing-page-angular17",
   "version": "0.0.0",
+  "homepage": "https://<TU_USUARIO_GITHUB>.github.io/landing-page-angular17/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng build --configuration production --base-href /landing-page-angular17/ && gh-pages -d dist/landing-page-angular17"
   },
   "private": true,
   "dependencies": {
@@ -28,6 +30,7 @@
     "@angular/cli": "^17.0.0",
     "@angular/compiler-cli": "^17.0.0",
     "@types/jasmine": "~5.1.0",
+    "gh-pages": "^6.3.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
